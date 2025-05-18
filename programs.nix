@@ -6,7 +6,7 @@
 {
 
   imports =
-    [ # Include the results of the hardware scan.
+    [ # standalone nix files.
       ./zsh.nix
     ];
 
@@ -15,14 +15,17 @@
     ## CLI / basics
     fastfetch
     git
+    kitty
     vim
     wget
-    kitty
-    ## vidya
+    ## de/wm
     wayland
+    wofi
     ## GUI - generic
+    deskflow
     discord
     github-desktop
+    rustdesk-flutter
     ##gnomePackages
     gnomeExtensions.pop-shell
     gnomeExtensions.ddterm
