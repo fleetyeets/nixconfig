@@ -12,15 +12,21 @@
 
   # packages
   environment.systemPackages = with pkgs; [
-    vim
-    git
-    wget
-    wayland
-    kitty
-    discord
-    gnomeExtensions.pop-shell
-    github-desktop
+    ## CLI / basics
     fastfetch
+    git
+    vim
+    wget
+    kitty
+    ## vidya
+    Wayland
+    ## GUI - generic
+    discord
+    github-desktop
+    rustdesk
+    ##gnomePackages
+    gnomeExtensions.pop-shell
+    gnomeExtensions.ddterm
   ];
 
   # Firefox
