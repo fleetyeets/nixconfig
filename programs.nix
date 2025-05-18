@@ -19,7 +19,7 @@
     wget
     kitty
     ## vidya
-    Wayland
+    wayland
     ## GUI - generic
     discord
     github-desktop
