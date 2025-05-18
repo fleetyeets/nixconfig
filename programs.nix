@@ -5,6 +5,11 @@
 { config, pkgs, ... }:
 {
 
+  imports =
+    [ # Include the results of the hardware scan.
+      ./zsh.nix
+    ];
+
   # packages
   environment.systemPackages = with pkgs; [
     vim
