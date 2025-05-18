@@ -23,7 +23,6 @@
     ## GUI - generic
     discord
     github-desktop
-    rustdesk
     ##gnomePackages
     gnomeExtensions.pop-shell
     gnomeExtensions.ddterm
