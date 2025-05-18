@@ -46,6 +46,15 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
+  # automatically clean up configs more than 3 weeks old
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than +3";
+  };
+  # after every build delete unused pkgs
+  nix.settings.auto-optimise-store = true;
+
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
@@ -129,7 +138,6 @@
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
-
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

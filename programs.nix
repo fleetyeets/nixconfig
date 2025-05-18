@@ -15,6 +15,7 @@
     discord
     gnomeExtensions.pop-shell
     github-desktop
+    fastfetch
   ];
 
   # Firefox
