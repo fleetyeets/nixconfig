@@ -24,6 +24,7 @@
     ## GUI - generic
     deskflow
     discord
+    gimp
     github-desktop
     rustdesk-flutter
     ##gnomePackages
