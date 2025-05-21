@@ -15,6 +15,11 @@ programs = {
       autosuggestions.enable = true;
       zsh-autoenv.enable = true;
       syntaxHighlighting.enable = true;
+      shellAliases = {
+           "ls" = "eza --icons --group-directories-first";
+           "ll" = "eza --icons --group-directories-first --long";
+           "cat" = "bat";
+      };
       ohMyZsh = {
          enable = true;
          theme = "robbyrussell";

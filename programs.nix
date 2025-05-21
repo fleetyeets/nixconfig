@@ -13,13 +13,24 @@
   # packages
   environment.systemPackages = with pkgs; [
     ## CLI / basics
+    bat
+    eza
     fastfetch
     git
     kitty
     vim
     wget
     ## de/wm
+    grim
+    river
+    slurp
+    swaybg
+    swayidle
+    swaylock
+    waybar
     wayland
+    wlr-randr
+    wlsunset
     wofi
     ## GUI - generic
     deskflow
@@ -30,6 +41,7 @@
     ##gnomePackages
     gnomeExtensions.pop-shell
     gnomeExtensions.ddterm
+    
   ];
 
   # Firefox
