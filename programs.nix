@@ -18,6 +18,8 @@
     fastfetch
     git
     kitty
+    mpv
+    socat
     vim
     wget
     ## de/wm
@@ -41,7 +43,9 @@
     ##gnomePackages
     gnomeExtensions.pop-shell
     gnomeExtensions.ddterm
-    
+    gnomeExtensions.quick-lofi
+    gnomeExtensions.open-bar
+    gnomeExtensions.space-bar
   ];
 
   # Firefox
