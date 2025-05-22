@@ -139,6 +139,8 @@
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
+  # Bootstap Kitty conf
+    environment.etc."xdg/kitty/kitty.conf".source = ./kitty.conf;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
