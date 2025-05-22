@@ -23,16 +23,8 @@
     vim
     wget
     ## de/wm
-    grim
-    river
-    slurp
-    swaybg
-    swayidle
-    swaylock
     waybar
     wayland
-    wlr-randr
-    wlsunset
     wofi
     ## GUI - generic
     deskflow
