@@ -17,6 +17,7 @@
     eza
     fastfetch
     git
+    hyfetch #pride flags
     kitty
     mpv
     socat

@@ -20,6 +20,7 @@ programs = {
            "ll" = "eza --icons --group-directories-first --long";
            "cat" = "bat";
       };
+      shellInit="hyfetch";
       ohMyZsh = {
          enable = true;
          theme = "robbyrussell";
