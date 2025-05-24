@@ -142,6 +142,19 @@
   # Bootstap Kitty conf
     environment.etc."xdg/kitty/kitty.conf".source = ./kitty.conf;
 
+  # Start deskflow
+
+  systemd.user.services.deskflow = {
+    enable = true;
+    description = "Open deskflow in the background at boot";
+    serviceConfig = {
+      ExecStart = "deskflow-client -a 192.168.1.7";
+      wantedBy = [ "graphical-session.target" ];
+      Restart = "on-failure";
+      RestartSec = "5s";
+    };
+  };
+
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
