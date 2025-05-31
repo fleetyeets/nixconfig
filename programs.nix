@@ -27,12 +27,13 @@
     waybar
     wayland
     wofi
-    ## GUI - generic
+    # Share between hosts
     deskflow
+    rustdesk-flutter
+    ## GUI - generic
     discord
     gimp
     github-desktop
-    rustdesk-flutter
     ##gnomePackages
     gnomeExtensions.pop-shell
     gnomeExtensions.ddterm

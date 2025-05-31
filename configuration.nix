@@ -9,7 +9,6 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./programs.nix
-      ./sway.nix
     ];
 
   # Bootloader.
@@ -148,8 +147,8 @@
     enable = true;
     description = "Open deskflow in the background at boot";
     serviceConfig = {
-      ExecStart = "deskflow-client -a 192.168.1.7";
-      wantedBy = [ "graphical-session.target" ];
+      ExecStart = "/nix/store/sjv81x1dg6fgb80csw6nhhzhghlicvcd-deskflow-1.21.2/bin/deskflow-client -a 192.168.1.7";
+      wantedBy = [ "graphical.target" ];
       Restart = "on-failure";
       RestartSec = "5s";
     };
