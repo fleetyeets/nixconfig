@@ -17,8 +17,8 @@ programs = {
       syntaxHighlighting.enable = true;
       shellAliases = {
            "ls" = "eza --icons --group-directories-first";
-           "ll" = "eza --icons --group-directories-first --long";
-           "cat" = "bat";
+           "ll" = "eza --icons --group-directories-first --all";
+           "cat" = "bat --theme=base16";
       };
       shellInit="hyfetch";
       ohMyZsh = {
