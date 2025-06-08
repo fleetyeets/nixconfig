@@ -13,6 +13,7 @@
   # packages
   environment.systemPackages = with pkgs; [
     ## CLI / basics
+    alacritty #niri
     bat
     eza
     fastfetch
@@ -24,9 +25,13 @@
     vim
     wget
     ## de/wm
+    gnome-keyring
+    fuzzel
+    mako
     waybar
     wayland
     wofi
+    xwayland-satellite
     # Share between hosts
     deskflow
     rustdesk-flutter
@@ -52,5 +57,8 @@
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
     localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
   };
+
+  # Niri
+  programs.niri.enable = true;
 
 }

@@ -56,8 +56,12 @@
   nix.settings.auto-optimise-store = true;
 
   # Enable the GNOME Desktop Environment.
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
+#  services.displayManager.gdm.enable = true;
+#  services.desktopManager.gnome.enable = true;
+
+# auto login
+#services.getty.autologinUser = allie;
+
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -146,8 +150,9 @@
   systemd.user.services.deskflow = {
     enable = true;
     description = "Open deskflow in the background at boot";
+    path = [pkgs.deskflow];
     serviceConfig = {
-      ExecStart = "nix/store/sjv81x1dg6fgb80csw6nhhzhghlicvcd-deskflow-1.21.2/bin/deskflow-client -f --debug INFO --name nixos --enable-crypto --sync-language 192.168.1.7:24800";
+      ExecStart = "${pkgs.deskflow}/bin/deskflow-client -f --debug INFO --name nixos --enable-crypto --sync-language 192.168.1.7:24800";
       wantedBy = [ "graphical.target" ];
       Restart = "on-failure";
       RestartSec = "5s";
