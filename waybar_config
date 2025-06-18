@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "modules-left": ["custom/media"],
+    "modules-left": ["custom/media", "niri/workspaces","niri/window"],
     "modules-right": ["pulseaudio", "clock"], 
     "clock": {
         "format": "{:%H:%M}",
@@ -26,6 +26,5 @@
             "default": ["", ""]
         },
         "scroll-step": 1,
-        "on-click": "pavucontrol"
     }
 }
