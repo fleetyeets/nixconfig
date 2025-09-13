@@ -32,6 +32,7 @@
     wayland
     wofi
     xwayland-satellite
+    xdg-desktop-portal-gtk
     # Share between hosts
     deskflow
     rustdesk-flutter
@@ -45,6 +46,10 @@
     gnomeExtensions.quick-lofi
     gnomeExtensions.open-bar
     gnomeExtensions.space-bar
+    ##art
+    scribus
+    ##work
+    teams-for-linux
   ];
 
   # Firefox

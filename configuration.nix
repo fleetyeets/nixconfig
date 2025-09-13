@@ -25,6 +25,9 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Enable xdg portal for screen share / deskflow.
+  xdg.portal.enable = true;
+
   # Set your time zone.
   time.timeZone = "America/New_York";
 
@@ -144,6 +147,7 @@
   };
   # Bootstap Kitty conf
     environment.etc."xdg/kitty/kitty.conf".source = ./kitty.conf;
+
 
   # Start deskflow
 
